@@ -9,6 +9,7 @@ function setStatus(message, kind = "info") {
   status.textContent = message;
   status.dataset.kind = kind;
 }
+
 function extractMoviesArray(payload) {
   if (Array.isArray(payload)) return payload;
   if (!payload || typeof payload !== "object") return null;
